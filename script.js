@@ -12,11 +12,10 @@ let articles;
   ald()
 })()
 function showArticle (o={}) {
-  history.pushState(o||history.state, "")
   $("#main").html(`
-  <h1>${o.title||history.state.title}</h1>
-  ${o.text||history.state.text}`)
-  $("title").text(o.title||history.state.title)
+  <h1>${o.title||"untitled"}</h1>
+  ${o.text}`)
+  $("title").text(o.title||"untitled")
 }
 function ald () {
   if(/https:\/\/keikun1215\.cf\/blog/g.test(location.href) && location.search != "") showArticle(articles[gquery().p])

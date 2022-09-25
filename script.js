@@ -19,7 +19,7 @@ function showArticle (o={}) {
   $("title").text(o.title||history.state.title)
 }
 function ald () {
-  if(/https:\/\/keikun1215\.cf\/blog/g.test(location.href) && location.search != "") showArticle(articles[gquery().p)])
+  if(/https:\/\/keikun1215\.cf\/blog/g.test(location.href) && location.search != "") showArticle(articles[gquery().p])
 }
 function gquery() {
   let ret = {}

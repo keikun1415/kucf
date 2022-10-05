@@ -97,9 +97,12 @@ hr {
   margin-right: auto;
   margin-left: auto;
 }
-/*code {
-  font-family: 'Roboto Mono', monospace;
-}*/
+code {
+  font-family: monospace;
+}
+code > * {
+  font-family: monospace;
+}
 @keyframes slideIn {
   0% {
     transform: translateX(180px);

@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>wh</title>
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-  <textarea onchange='fetch("https://discord.com/api/webhooks/1015461758439280713/zSJgxAKSt39UhRFb3Sao2iBecZACBl4hhK1EaOujVY16-AjeWWrh63JtxbjJR4zHAHl7", {method:"POST",headers:{"Content-Type":"Application/json"},body:JSON.stringify({content:this.value})})' id="ta"></textarea>
+  <h1 class="t">ADT</h1>
+  <h2>Webhook send</h2>
+  <textarea id="message" type="text"></textarea><br>
+  <button id="sendbt">送信</button>
+  <script src="script.js"></script>
 </body>
+
 </html>
